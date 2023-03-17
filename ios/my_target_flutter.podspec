@@ -16,7 +16,7 @@ Flutter myTarget SDK for iOS.
   s.source_files = 'Classes/**/*'
   s.static_framework = true
   s.dependency 'Flutter'
-  s.dependency 'myTargetSDK', '~> 5.17.4'
+  s.dependency 'myTargetSDK', '~> 5.15'
   s.platform = :ios, '9.0'
 
   # Flutter.framework does not contain a i386 slice.

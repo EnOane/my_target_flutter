@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
                     if (_ad == null) {
                       _showError(context, 'Ad not created');
                     } else {
-                      _ad!.load();
+                      await _ad!.load();
                     }
                   },
                 ),
@@ -85,7 +85,7 @@ class _MyAppState extends State<MyApp> {
                     if (_ad == null) {
                       _showError(context, 'Ad not created');
                     } else {
-                      _ad!.show();
+                      await _ad!.show();
                     }
                   },
                 ),

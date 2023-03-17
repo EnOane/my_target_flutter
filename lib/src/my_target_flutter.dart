@@ -87,12 +87,12 @@ class InterstitialAd {
     }
   }
 
-  void load() {
-    _plugin._load(uid);
+  Future<void> load() async {
+   await _plugin._load(uid);
   }
 
-  void show() {
-    _plugin._show(uid);
+  Future<void> show() async {
+    await _plugin._show(uid);
   }
 
   void addListener(AdStatusListener listener) {
